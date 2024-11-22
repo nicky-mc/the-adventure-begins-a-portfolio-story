@@ -51,67 +51,100 @@ body {
 /* Responsive Adjustments for Small Screens */
 @media (max-width: 768px) {
   body {
-    @apply text-base; /* Slightly smaller text for readability on smaller screens */
+    @apply text-base;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply text-center text-xl; /* Adjust headings for better fit on smaller screens */
+    @apply text-center text-xl;
   }
 
   p {
-    @apply text-sm leading-relaxed; /* Smaller paragraphs with enough spacing */
+    @apply text-sm leading-relaxed;
   }
 
   .btn {
-    @apply w-full py-2 text-sm; /* Full-width buttons for better touch interaction */
+    @apply w-full py-2 text-sm;
   }
 
   .container, .max-w-2xl {
-    @apply px-4; /* Reduce horizontal padding */
+    @apply px-4;
   }
 
   .grid {
-    @apply grid-cols-1 gap-4; /* Adjust grids to stack on smaller screens */
+    @apply grid-cols-1 gap-4;
   }
 
   .rounded-lg {
-    @apply rounded-md; /* Slightly reduce border-radius for consistency */
+    @apply rounded-md;
   }
 
   .shadow-lg {
-    @apply shadow-md; /* Softer shadows for mobile visuals */
+    @apply shadow-md;
   }
 
-  /* Navbar or Header Adjustments */
   header {
-    @apply flex flex-col items-center; /* Center-align header content */
+    @apply flex flex-col items-center;
   }
 
   nav {
-    @apply space-y-2; /* Stack navigation links */
+    @apply space-y-2;
   }
 
-  /* Scrollbar Adjustments */
   ::-webkit-scrollbar {
-    width: 6px; /* Narrow scrollbar for smaller screens */
+    width: 6px;
+  }
+}
+
+/* Responsive Adjustments for Medium Screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    @apply text-lg;
+  }
+
+  h1, h2 {
+    @apply text-3xl; /* Slightly larger headings for better readability */
+  }
+
+  .container, .max-w-2xl {
+    @apply px-6 py-4; /* Moderate padding for medium screens */
+  }
+
+  p {
+    @apply text-base leading-loose; /* Adjust paragraph size and spacing */
+  }
+
+  .btn {
+    @apply py-3 px-6 text-base; /* Larger buttons for medium screens */
+  }
+
+  .grid {
+    @apply grid-cols-2 gap-6; /* Two-column layout for better use of space */
+  }
+
+  .rounded-lg {
+    @apply rounded-lg; /* Restore larger border-radius for a clean look */
+  }
+
+  .shadow-lg {
+    @apply shadow-lg; /* Retain strong shadows */
   }
 }
 
 /* Extra Small Screens (e.g., Phones in Portrait) */
 @media (max-width: 480px) {
   body {
-    @apply text-sm; /* Reduce font size further for very small screens */
+    @apply text-sm;
   }
 
   h1, h2 {
-    @apply text-lg; /* Further reduce heading sizes */
+    @apply text-lg;
   }
 
   .btn {
-    @apply text-xs; /* Smaller buttons for compact spaces */
+    @apply text-xs;
   }
 
   .grid {
-    @apply gap-2; /* Reduce grid gaps */
+    @apply gap-2;
   }
 }
