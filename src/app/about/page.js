@@ -15,7 +15,7 @@ export default function About() {
         </div>
         <div className="md:w-2/3 md:pl-6">
           <p className="text-lg leading-relaxed">
-            Greetings, adventurer! I am Dominique Mortoza-Cowles, a Level 20 Sorcerer of the
+            Greetings, adventurer! I am Nicky Mortoza-Cowles, a Level 20 Sorcerer of the
             Phoenix Bloodline with a focus on web development magic. My skills include mastering
             HTML, CSS, JavaScript, TailwindCSS, Node.js, TypeScript, PostgreSQL, and modern frameworks like React and Next.js.
           </p>

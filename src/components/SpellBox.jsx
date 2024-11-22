@@ -12,7 +12,7 @@ export default function SpellBox() {
   */
 
   const sorcererProfile = {
-    name: "Dominique Mortoza-Cowles",
+    name: "Nicky Mortoza-Cowles",
     title: "Level 20 Sorcerer (Phoenix Bloodline)",
     location: "Fakenham, UK",
     email: "d.mortozacowles@gmail.com",

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-parchment text-ink p-6">
       <header className="text-center">
-        <h1 className="text-5xl font-bold mb-6">Dominique Mortoza-Cowles</h1>
+        <h1 className="text-5xl font-bold mb-6">Nicky Mortoza-Cowles</h1>
         <p className="text-2xl italic">Sorcerer Level 20 (Phoenix Bloodline)</p>
       </header>
       <main className="container mx-auto mt-8">

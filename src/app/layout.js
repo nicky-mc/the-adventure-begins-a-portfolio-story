@@ -2,7 +2,7 @@ import './globals.css';
 import Link from 'next/link';
 
 export const metadata = {
-  title: "Dominique Mortoza-Cowles Portfolio",
+  title: "Nicky Mortoza-Cowles Portfolio",
   description: "High-fantasy themed portfolio showcasing Dominique's web development skills.",
 };
 
@@ -32,7 +32,7 @@ function Header() {
   return (
     <header className="bg-black text-neutral p-4 shadow-lg">
       <div className="container mx-auto flex items-center justify-between">
-        <h1 className="text-4xl font-bold">Dominique Mortoza-Cowles</h1>
+        <h1 className="text-4xl font-bold">Nicky Mortoza-Cowles</h1>
         <nav className="flex gap-4">
           <Link href="/" className="btn btn-ghost btn-sm text-neutral">
             Home
