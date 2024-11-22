@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
           <main className="flex-grow container mx-auto p-6">{children}</main>
 
           {/* Footer */}
-          <footer className="bg-secondary text-neutral p-4 text-center mt-6">
+          <footer className="bg-black text-neutral p-4 text-center mt-6">
             <p>© {new Date().getFullYear()} Dominique Mortoza-Cowles. All rights reserved.</p>
           </footer>
         </div>
