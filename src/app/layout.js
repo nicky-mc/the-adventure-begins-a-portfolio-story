@@ -37,18 +37,19 @@ function Header() {
           <Link href="/" className="btn btn-ghost btn-sm text-neutral">
             Home
           </Link>
-          <Link href="/blogs" className="btn btn-ghost btn-sm text-neutral">
-            Blogs
-          </Link>
-          <Link href="/projects" className="btn btn-ghost btn-sm text-neutral">
-            Projects
-          </Link>
           <Link href="/contact" className="btn btn-ghost btn-sm text-neutral">
             Contact
           </Link>
           <Link href="/about" className="btn btn-ghost btn-sm text-neutral">
             About Me
           </Link>
+          <Link href="/blogs" className="btn btn-ghost btn-sm text-neutral">
+            Blogs
+          </Link>
+          <Link href="/projects" className="btn btn-ghost btn-sm text-neutral">
+            Projects
+          </Link>
+         
         </nav>
       </div>
     </header>

@@ -32,8 +32,13 @@ const sorcererProfile = {
     "Troubleshooting",
     "User Training",
     "Presentation Skills"
+    "Problem Solving"
+    "Creative Thinking"
+    "Web Development"
+    "Adaptability"
+    "Fast Study"
   ],
-  background: "Transitioning to software development with hands-on bootcamp experience."
+  background: "Transitioning to software development with hands-on bootcamp experience and an ever growing portfolio to demonstrate my ability."
 };
 
 const spellCasting = () => {
