@@ -14,7 +14,7 @@ const projects = [
     link: 'https://the-nexus.vercel.app/',
   },
   {
-    title: 'THe Sparkle Zone',
+    title: 'The Sparkle Zone',
     description: 'A project utilising nextjs and supabase to create blog posts allowing comments using CRUD operations as well as including things I enjoy and utilising as many of the skills learnt so far during my Bootcamp with Tech Educators UK in Norwich..',
     imageUrl: '/images/project3.png',
     link: 'https://the-sparkle-zone.vercel.app/',
@@ -26,7 +26,7 @@ const projects = [
     link: 'https://week11-lessons-maybe.vercel.app/',
   },
   {
-    title: 'Nicky`&apos;s Space',
+    title: 'Nickys Space',
     description: 'A personal blog where where i have utilised react and express to allow for posting blogs and comments',
     imageUrl: '/images/project5.png',
     link: 'https://nickys-space.onrender.com/',

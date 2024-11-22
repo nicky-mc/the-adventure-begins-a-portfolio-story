@@ -8,7 +8,7 @@ export default function About() {
       <div className="flex flex-col md:flex-row items-center">
         <div className="md:w-1/3 mb-6 md:mb-0">
           <img
-            src="/images/profile.jpg" // Ensure this path points to your profile image
+            src="https://media.licdn.com/dms/image/v2/D4E03AQH839lLDu-jQw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1731101331762?e=1737590400&v=beta&t=2DsI2a9EwERd1wKS29b63gsPxZqLenR1OXzrO6QleX4" // Ensure this path points to your profile image
             alt="Dominique Mortoza-Cowles"
             className="rounded-full shadow-lg w-48 h-48 object-cover"
           />
@@ -28,11 +28,11 @@ export default function About() {
             I am a web developer with a passion for creating beautiful and functional websites. I have experience in various web technologies and love to learn new things. Enthusiastic and detail-oriented individual transitioning into the tech industry with hands-on experience from a software development boot camp, which I graduated with high standards. I am eager to bring my technical support background, problem-solving skills, and ability to communicate technical concepts to a new and challenging role in Web Development.
           </p>
           <div className="mt-8 flex space-x-4">
-            <Link href="/contact">
-              <a className="btn btn-primary">Contact Me</a>
+            <Link href="/contact" className="btn btn-primary">
+              Contact Me
             </Link>
-            <Link href="/">
-              <a className="btn btn-secondary">Back to Home</a>
+            <Link href="/" className="btn btn-secondary">
+              Back to Home
             </Link>
           </div>
         </div>

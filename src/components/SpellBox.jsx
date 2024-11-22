@@ -1,6 +1,5 @@
 // SpellBox.jsx
 "use client";
-// SpellBox.jsx
 import { useState } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -50,13 +49,21 @@ export default function SpellBox() {
       <div
         style={{
           border: '2px solid #FFD700',
-          backgroundImage: 'url("/images/fantasy-scroll.jpg")',
+          backgroundImage: 'url("/images/scroll.jpeg")',
           backgroundSize: 'cover',
+          backgroundPosition: 'center',
         }}
         className="p-4 mb-4 rounded"
       >
         {showSpell ? (
-          <pre>
+          <pre
+            style={{
+              color: '#5C2A2A', // Dark reddish-brown
+              fontSize: '1.2rem', // Increased font size
+              lineHeight: '1.5', // Improve readability
+              textShadow: '2px 2px 4px rgba(255, 255, 255, 0.6)', // Glowing effect
+            }}
+          >
             <Typewriter
               words={[spellContent]}
               loop={false}
@@ -67,7 +74,7 @@ export default function SpellBox() {
             />
           </pre>
         ) : (
-          <p className="text-center text-gray-400">The scroll remains sealed...</p>
+          <p className="text-center text-slate-700">The scroll remains sealed...</p>
         )}
       </div>
       <div className="text-center">
