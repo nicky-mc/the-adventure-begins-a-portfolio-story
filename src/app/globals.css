@@ -47,3 +47,71 @@ body {
   background-color: var(--background);
   color: var(--foreground);
 }
+
+/* Responsive Adjustments for Small Screens */
+@media (max-width: 768px) {
+  body {
+    @apply text-base; /* Slightly smaller text for readability on smaller screens */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-center text-xl; /* Adjust headings for better fit on smaller screens */
+  }
+
+  p {
+    @apply text-sm leading-relaxed; /* Smaller paragraphs with enough spacing */
+  }
+
+  .btn {
+    @apply w-full py-2 text-sm; /* Full-width buttons for better touch interaction */
+  }
+
+  .container, .max-w-2xl {
+    @apply px-4; /* Reduce horizontal padding */
+  }
+
+  .grid {
+    @apply grid-cols-1 gap-4; /* Adjust grids to stack on smaller screens */
+  }
+
+  .rounded-lg {
+    @apply rounded-md; /* Slightly reduce border-radius for consistency */
+  }
+
+  .shadow-lg {
+    @apply shadow-md; /* Softer shadows for mobile visuals */
+  }
+
+  /* Navbar or Header Adjustments */
+  header {
+    @apply flex flex-col items-center; /* Center-align header content */
+  }
+
+  nav {
+    @apply space-y-2; /* Stack navigation links */
+  }
+
+  /* Scrollbar Adjustments */
+  ::-webkit-scrollbar {
+    width: 6px; /* Narrow scrollbar for smaller screens */
+  }
+}
+
+/* Extra Small Screens (e.g., Phones in Portrait) */
+@media (max-width: 480px) {
+  body {
+    @apply text-sm; /* Reduce font size further for very small screens */
+  }
+
+  h1, h2 {
+    @apply text-lg; /* Further reduce heading sizes */
+  }
+
+  .btn {
+    @apply text-xs; /* Smaller buttons for compact spaces */
+  }
+
+  .grid {
+    @apply gap-2; /* Reduce grid gaps */
+  }
+}
