@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Font and Basic Styles */
+body {
+  font-family: 'Cinzel', serif;
+  @apply text-ink bg-parchment min-h-screen;
+}
+
+/* Custom Scrollbar (Optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded;
+}
+::-webkit-scrollbar-track {
+  @apply bg-neutral;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #FFD700;
+  --secondary: #8B0000;
+  --neutral: #F5F5DC;
+  --parchment: #f9f4e7;
+  --ink: #2b2b2b;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary: #FFD700;
+  --secondary: #8B0000;
+  --neutral: #2b2b2b;
+  --parchment: #2b2b2b;
+  --ink: #f9f4e7;
+}
+
+/* Apply Theme Colors */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
