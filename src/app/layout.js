@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
 
 function Header() {
   return (
-    <header className="bg-black text-neutral p-4 shadow-lg">
+    <header className="bg-black text-neutral    npm install --legacy-peer-deps p-4 shadow-lg">
       <div className="container mx-auto flex items-center justify-between">
         <h1 className="text-4xl font-bold">Dominique Mortoza-Cowles</h1>
         <nav className="flex gap-4">
