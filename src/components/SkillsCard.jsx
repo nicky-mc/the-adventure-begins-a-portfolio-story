@@ -70,7 +70,7 @@ export default function SkillsCard() {
             >
               <div className="flex items-center mb-4">
                 <span className="text-3xl mr-2">{skill.icon}</span>
-                <strong className="text-yellow-400 text-lg">{skill.name}</strong>
+                <strong className="text-yellow-400 text-base">{skill.name}</strong>
               </div>
               <p className="text-sm italic text-gray-300 mb-2">
                 {skill.description}

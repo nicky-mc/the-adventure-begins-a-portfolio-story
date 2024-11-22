@@ -22,7 +22,7 @@ export default function SpellsCard() {
           <div key={index} className="card bg-gray-800 shadow-md p-4 text-white rounded-lg hover:scale-105 transform transition">
             <div className="flex items-center mb-2">
               <span className="text-3xl mr-2">{spell.icon}</span>
-              <h4 className="text-purple-400 text-lg font-bold">Level {spell.level}: {spell.name}</h4>
+              <h4 className="text-purple-400 text-base font-bold">Level {spell.level}: {spell.name}</h4>
             </div>
             <p className="text-sm text-gray-300">{spell.description}</p>
           </div>
