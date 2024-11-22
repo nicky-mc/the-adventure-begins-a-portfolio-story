@@ -1,67 +1,68 @@
-// SpellBox.jsx
 "use client";
-import { useState } from 'react';
-import { Typewriter } from 'react-simple-typewriter';
+
+import { useState } from "react";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function SpellBox() {
   const [showSpell, setShowSpell] = useState(false);
 
   const spellContent = `
-  /*
-  ** Magic Profile Spell
-  */
+/*
+** Magic Profile Spell
+*/
 
-  const sorcererProfile = {
-    name: "Nicky Mortoza-Cowles",
-    title: "Level 20 Sorcerer (Phoenix Bloodline)",
-    location: "Fakenham, UK",
-    email: "d.mortozacowles@gmail.com",
-    skills: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "TypeScript",
-      "React",
-      "TailwindCSS",
-      "SQL",
-      "GitHub"
-    ],
-    strengths: [
-      "Team Collaboration",
-      "Technical Support",
-      "Troubleshooting",
-      "User Training",
-      "Presentation Skills"
-    ],
-    background: "Transitioning to software development with hands-on bootcamp experience."
-  };
+const sorcererProfile = {
+  name: "Nicky Mortoza-Cowles",
+  title: "Level 20 Sorcerer (Phoenix Bloodline)",
+  location: "Fakenham, UK",
+  email: "d.mortozacowles@gmail.com",
+  skills: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "TailwindCSS",
+    "SQL",
+    "GitHub"
+  ],
+  strengths: [
+    "Team Collaboration",
+    "Technical Support",
+    "Troubleshooting",
+    "User Training",
+    "Presentation Skills"
+  ],
+  background: "Transitioning to software development with hands-on bootcamp experience."
+};
 
-  const spellCasting = () => {
-    console.log("Unleashing web development magic...");
-  };
+const spellCasting = () => {
+  console.log("Unleashing web development magic...");
+};
 
-  spellCasting();
-  `;
+spellCasting();
+`;
 
   return (
     <div className="p-6 rounded-lg shadow-lg bg-gray-900 text-green-400 mt-8 font-mono">
       <h3 className="text-2xl text-center text-yellow-400 mb-4">Spell Scroll</h3>
       <div
         style={{
-          border: '2px solid #FFD700',
+          border: "2px solid #FFD700",
           backgroundImage: 'url("/images/scroll.jpeg")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
         className="p-4 mb-4 rounded"
       >
         {showSpell ? (
           <pre
+            className="overflow-x-auto text-justify"
             style={{
-              color: '#5C2A2A', // Dark reddish-brown
-              fontSize: '1.2rem', // Increased font size
-              lineHeight: '1.5', // Improve readability
-              textShadow: '2px 2px 4px rgba(255, 255, 255, 0.6)', // Glowing effect
+              color: "#5C2A2A", // Dark reddish-brown
+              fontSize: "1.2rem",
+              lineHeight: "1.5",
+              textShadow: "2px 2px 4px rgba(255, 255, 255, 0.6)", // Glowing effect
             }}
           >
             <Typewriter
@@ -81,8 +82,8 @@ export default function SpellBox() {
         <button
           className={`btn ${
             showSpell
-              ? 'btn-error bg-gradient-to-r from-red-600 to-orange-400 hover:from-red-700 hover:to-orange-500'
-              : 'btn-primary bg-gradient-to-r from-purple-600 to-blue-400 hover:from-purple-700 hover:to-blue-500'
+              ? "btn-error bg-gradient-to-r from-red-600 to-orange-400 hover:from-red-700 hover:to-orange-500"
+              : "btn-primary bg-gradient-to-r from-purple-600 to-blue-400 hover:from-purple-700 hover:to-blue-500"
           } text-white shadow-md`}
           onClick={() => setShowSpell((prev) => !prev)}
         >
