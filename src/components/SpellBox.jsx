@@ -57,11 +57,11 @@ spellCasting();
       >
         {showSpell ? (
           <pre
-            className="overflow-x-auto text-justify"
+            className="text-justify break-words whitespace-pre-wrap"
             style={{
-              color: "#5C2A2A", // Dark reddish-brown
-              fontSize: "1.2rem",
-              lineHeight: "1.5",
+              color: "#5C2A2A",
+              fontSize: "clamp(0.8rem, 1.2vw, 1.2rem)", // Dynamic font size
+              lineHeight: "1.4", // Line height for readability
               textShadow: "2px 2px 4px rgba(255, 255, 255, 0.6)", // Glowing effect
             }}
           >
