@@ -68,31 +68,7 @@ This application serves as a fantastical portfolio for developers, writers, and 
 │   └── 📁 utils/               # The arcane database connection spell
 ├── 📄 next.config.mjs          # Portal configuration
 ├── 📄 tailwind.config.js       # Design spellbook
-└── 📄 package.json             # Scroll of dependencies
-```
-
----
-
-## 🛡️ How to Embark on This Journey
-
-1. **Clone the Repository**:
-   ```bash
-   git clone [REPO_URL]
-   ```
-
-2. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Start the Journey**:
-   ```bash
-   npm run dev
-   ```
-
-4. Open the portal at [http://localhost:3000](http://localhost:3000) and let the adventure begin!
-
----
+└── 📄 package.json             # Scroll of spells
 
 ## 📜 The Credits
 
