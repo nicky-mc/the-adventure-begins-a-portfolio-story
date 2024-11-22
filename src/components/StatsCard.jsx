@@ -20,7 +20,7 @@ export default function StatsCard() {
             <div key={index} className="card bg-gray-800 shadow-md p-4 text-white rounded-lg hover:scale-105 transform transition">
               <div className="flex items-center mb-2">
                 <span className="text-3xl mr-2">{stat.icon}</span>
-                <h4 className="text-green-400 text-lg font-bold">{stat.key}</h4>
+                <h4 className="text-green-400 text-base font-bold">{stat.key}</h4>
               </div>
               <h2 className="text-gray-300 text-xlg text-center">{stat.value}</h2>
             </div>
