@@ -20,9 +20,9 @@ export default function About() {
             HTML, CSS, JavaScript, TailwindCSS, Node.js, TypeScript, PostgreSQL, and modern frameworks like React and Next.js.
           </p>
           <p className="text-lg leading-relaxed mt-4">
-            When I`&apos;m not weaving spells in the form of functional, user-friendly apps, I enjoy exploring fantasy worlds,
+            When I&apos;m not weaving spells in the form of functional, user-friendly apps, I enjoy exploring fantasy worlds,
             honing my problem-solving skills, and bringing ideas to life with innovative designs.
-            Let`&apos;s embark on an adventure together!
+            Let&apos;s embark on an adventure together!
           </p>
           <p className="text-lg leading-relaxed mt-4">
             I am a web developer with a passion for creating beautiful and functional websites. I have experience in various web technologies and love to learn new things. Enthusiastic and detail-oriented individual transitioning into the tech industry with hands-on experience from a software development boot camp, which I graduated with high standards. I am eager to bring my technical support background, problem-solving skills, and ability to communicate technical concepts to a new and challenging role in Web Development.
