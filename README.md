@@ -6,12 +6,12 @@ Welcome, brave adventurer, to **The Adventure Begins**, a portfolio like no othe
 
 ## ⚔️ The Tale Behind the Code
 
-This application serves as a fantastical portfolio for developers, writers, and creators who wish to showcase their work in a legendary format. It blends the magic of modern web development with the art of storytelling, allowing users to:
+This application serves as a fantastical portfolio for an an intrepid developer, writer of tomes, and a creator of magical portals who wishes to showcase their work in a legendary format. It blends the magic of modern web development with the art of storytelling, allowing users to:
 
 - **Browse Projects**: Explore a collection of completed quests (projects) with details and images.
 - **Read Blogs**: Delve into the developer's chronicles, insights, and musings.
 - **Connect**: Send messages through the enchanted contact form.
-- **Dynamic Themes**: Toggle between light and dark realms, fitting for all adventurers.
+- **Dynamic Themes**: Toggle between light and dark realms, fitting for all adventurers.(tbc)
 
 ---
 
