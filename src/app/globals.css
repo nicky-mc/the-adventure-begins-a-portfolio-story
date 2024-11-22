@@ -51,100 +51,53 @@ body {
 /* Responsive Adjustments for Small Screens */
 @media (max-width: 768px) {
   body {
-    @apply text-base;
+    font-size: 1rem; /* Equivalent to 'text-base' */
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply text-center text-xl;
+    text-align: center; /* Equivalent to 'text-center' */
+    font-size: 1.25rem; /* Equivalent to 'text-xl' */
   }
 
   p {
-    @apply text-sm leading-relaxed;
+    font-size: 0.875rem; /* Equivalent to 'text-sm' */
+    line-height: 1.75rem; /* Equivalent to 'leading-relaxed' */
   }
 
   .btn {
-    @apply w-full py-2 text-sm;
+    width: 100%; /* Equivalent to 'w-full' */
+    padding: 0.5rem 1rem; /* Equivalent to 'py-2 text-sm' */
   }
 
   .container, .max-w-2xl {
-    @apply px-4;
+    padding-left: 1rem; /* Equivalent to 'px-4' */
+    padding-right: 1rem;
   }
 
   .grid {
-    @apply grid-cols-1 gap-4;
+    grid-template-columns: repeat(1, 1fr); /* Equivalent to 'grid-cols-1' */
+    gap: 1rem; /* Equivalent to 'gap-4' */
   }
 
   .rounded-lg {
-    @apply rounded-md;
+    border-radius: 0.5rem; /* Equivalent to 'rounded-md' */
   }
 
   .shadow-lg {
-    @apply shadow-md;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to 'shadow-md' */
   }
 
   header {
-    @apply flex flex-col items-center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   nav {
-    @apply space-y-2;
+    gap: 0.5rem; /* Equivalent to 'space-y-2' */
   }
 
   ::-webkit-scrollbar {
     width: 6px;
-  }
-}
-
-/* Responsive Adjustments for Medium Screens */
-@media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    @apply text-lg;
-  }
-
-  h1, h2 {
-    @apply text-3xl; /* Slightly larger headings for better readability */
-  }
-
-  .container, .max-w-2xl {
-    @apply px-6 py-4; /* Moderate padding for medium screens */
-  }
-
-  p {
-    @apply text-base leading-loose; /* Adjust paragraph size and spacing */
-  }
-
-  .btn {
-    @apply py-3 px-6 text-base; /* Larger buttons for medium screens */
-  }
-
-  .grid {
-    @apply grid-cols-2 gap-6; /* Two-column layout for better use of space */
-  }
-
-  .rounded-lg {
-    @apply rounded-lg; /* Restore larger border-radius for a clean look */
-  }
-
-  .shadow-lg {
-    @apply shadow-lg; /* Retain strong shadows */
-  }
-}
-
-/* Extra Small Screens (e.g., Phones in Portrait) */
-@media (max-width: 480px) {
-  body {
-    @apply text-sm;
-  }
-
-  h1, h2 {
-    @apply text-lg;
-  }
-
-  .btn {
-    @apply text-xs;
-  }
-
-  .grid {
-    @apply gap-2;
   }
 }
