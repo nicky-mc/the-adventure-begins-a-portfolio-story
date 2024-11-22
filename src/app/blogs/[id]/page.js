@@ -119,7 +119,11 @@ export default function BlogDetail() {
             />
             <h1 className="text-4xl font-bold mb-4">{blog.title}</h1>
             <p className="text-sm text-gray-600 mb-4">By {blog.author}</p>
-            <p className="text-lg leading-relaxed">{blog.content}</p>
+            {blog.content.split('\n').map((paragraph, index) => (
+              <p key={index} className="text-lg leading-relaxed mb-4">
+                {paragraph}
+              </p>
+            ))}
             <button onClick={() => setIsEditing(true)} className="btn btn-secondary mt-4">
               Edit Blog
             </button>
