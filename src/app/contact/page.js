@@ -6,8 +6,8 @@ export default function Contact() {
       <h1 className="text-4xl font-bold mb-6 text-center">Contact Me</h1>
       <div className="max-w-2xl mx-auto bg-neutral p-6 rounded-lg shadow-md">
         <p className="text-lg leading-relaxed mb-4">
-          If you'd like to discuss potential opportunities, collaborations, or just chat about
-          web development magic, feel free to reach out! You can download my CV or email me directly.
+          If you`&apos;d like to discuss potential opportunities, collaborations, just chat about
+          web development magic or dungeons and dragons,  feel free to reach out! You can download my CV or email me directly.
         </p>
 
         {/* Download CV */}

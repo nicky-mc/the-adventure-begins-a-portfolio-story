@@ -1,4 +1,5 @@
 import './globals.css';
+import Link from 'next/link';
 
 export const metadata = {
   title: "Dominique Mortoza-Cowles Portfolio",
@@ -29,25 +30,25 @@ export default function RootLayout({ children }) {
 
 function Header() {
   return (
-    <header className="bg-black text-neutral    npm install --legacy-peer-deps p-4 shadow-lg">
+    <header className="bg-black text-neutral p-4 shadow-lg">
       <div className="container mx-auto flex items-center justify-between">
         <h1 className="text-4xl font-bold">Dominique Mortoza-Cowles</h1>
         <nav className="flex gap-4">
-          <a href="/" className="btn btn-ghost btn-sm text-neutral">
+          <Link href="/" className="btn btn-ghost btn-sm text-neutral">
             Home
-          </a>
-          <a href="/blogs" className="btn btn-ghost btn-sm text-neutral">
+          </Link>
+          <Link href="/blogs" className="btn btn-ghost btn-sm text-neutral">
             Blogs
-          </a>
-          <a href="/projects" className="btn btn-ghost btn-sm text-neutral">
+          </Link>
+          <Link href="/projects" className="btn btn-ghost btn-sm text-neutral">
             Projects
-          </a>
-          <a href="/contact" className="btn btn-ghost btn-sm text-neutral">
+          </Link>
+          <Link href="/contact" className="btn btn-ghost btn-sm text-neutral">
             Contact
-          </a>
-          <a href="/about" className="btn btn-ghost btn-sm text-neutral">
+          </Link>
+          <Link href="/about" className="btn btn-ghost btn-sm text-neutral">
             About Me
-          </a>
+          </Link>
         </nav>
       </div>
     </header>
