@@ -26,12 +26,6 @@ const projects = [
     link: 'https://week11-lessons-maybe.vercel.app/',
   },
   {
-    title: 'Nickys Space',
-    description: 'A personal blog where where i have utilised react and express to allow for posting blogs and comments',
-    imageUrl: '/images/project5.png',
-    link: 'https://nickys-space.onrender.com/',
-  },
-  {
     title: 'Monster Smasher',
     description: 'A fun clicker game where players can smash the monster and earn points and buy upgrades. Built with React.',
     imageUrl: '/images/project6.png',
