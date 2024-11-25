@@ -85,9 +85,10 @@ This application is still guarded by a dragon (WIP). Tread carefully, as not all
 May your code be clean and your bugs vanquished. **Let the adventure begin!**
 
 ---
-# 🪶 Reflections from the Developer’s Quill
+## 🪶 Reflections from the Developer’s Quill
 
-##🎩 Turning Creativity Into Code: My Portfolio Adventure 🧙‍♂️
+
+### 🎩 Turning Creativity Into Code: My Portfolio Adventure 🧙‍♂️
 
 Growing up, storytelling was woven into the fabric of my life. My father had a talent for spinning amusing tales(and very very very bad jokes) , and my grandfather, a proud Glaswegian, was the epitome of a “patter merchant”—charming and quick-witted, always ready with a story to captivate his audience. (Once between the two of them, they tried to convince my siblings and I that a haggis was a three legged creature that lived in Scotland, its fur was used to make kilts and its body to make a bagpipe). Those influences shaped how I view the world(and continued with my own son, much to his shaking his head at how lame a parent he has(teens, huh?)): as a series of adventures, challenges, and opportunities to tell a tale. 
 
