@@ -81,6 +81,13 @@ export default function About() {
               isMainAccordionOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
             }`}
           >
+            <p className="text-lg leading-relaxed mt-4">
+              Growing up, storytelling was woven into the fabric of my life. My father had a talent for spinning amusing tales (and very, very, very bad jokes), and my grandfather, a proud Glaswegian, was the epitome of a “patter merchant”—charming and quick-witted, always ready with a story to captivate his audience. (Once, between the two of them, they tried to convince my siblings and me that a haggis was a three-legged creature that lived in Scotland, its fur used to make kilts, and its body to make a bagpipe.)
+            </p>
+            <p className="text-lg leading-relaxed mt-4">
+              Those influences shaped how I view the world (and continued with my own son, much to his head-shaking at how lame a parent he has (teens, huh?)): as a series of adventures, challenges, and opportunities to tell a tale.
+            </p>
+
             {/* Nested Accordion */}
             <div
               className={`collapse bg-gray-50 shadow-md transition-all duration-500 mt-4 ${
@@ -105,12 +112,6 @@ export default function About() {
                   isNestedAccordionOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <p className="text-lg leading-relaxed mt-4">
-                  Growing up, storytelling was woven into the fabric of my life. My father had a talent for spinning amusing tales (and very, very, very bad jokes), and my grandfather, a proud Glaswegian, was the epitome of a “patter merchant”—charming and quick-witted, always ready with a story to captivate his audience.
-                </p>
-                <p className="text-lg leading-relaxed mt-4">
-                  Those influences shaped how I view the world (and continued with my own son, much to his head-shaking at how lame a parent he has (teens, huh?)): as a series of adventures, challenges, and opportunities to tell a tale.
-                </p>
                 <p className="text-lg leading-relaxed mt-4">
                   It’s no wonder, then, that I’ve turned my portfolio into <strong>The Adventure Begins: A Portfolio Story</strong>. This isn’t just a standard list of projects or a plain resume—it’s an immersive journey into my creative and technical skills, told in a way that reflects who I am.
                 </p>
