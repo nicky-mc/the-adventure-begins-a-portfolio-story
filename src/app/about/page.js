@@ -78,7 +78,7 @@ export default function About() {
           </div>
           <div
             className={`collapse-content overflow-hidden transition-all duration-500 ease-in-out ${
-              isMainAccordionOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+              isMainAccordionOpen ? "opacity-100" : "opacity-0"
             }`}
           >
             <p className="text-lg leading-relaxed mt-4">
@@ -108,12 +108,9 @@ export default function About() {
                 </span>
               </div>
               <div
-                className={`collapse-content overflow-auto transition-all duration-500 ease-in-out ${
+                className={`collapse-content transition-all duration-500 ease-in-out ${
                   isNestedAccordionOpen ? "opacity-100" : "opacity-0"
                 }`}
-                style={{
-                  maxHeight: isNestedAccordionOpen ? "auto" : "0px", // Dynamic height
-                }}
               >
                 <p className="text-lg leading-relaxed mt-4">
                   It’s no wonder, then, that I’ve turned my portfolio into <strong>The Adventure Begins: A Portfolio Story</strong>. This isn’t just a standard list of projects or a plain resume—it’s an immersive journey into my creative and technical skills, told in a way that reflects who I am.
