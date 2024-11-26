@@ -1,14 +1,31 @@
-// About.jsx
+//about/page.js
+"use client";
+
 import Link from 'next/link';
+import { useState, useEffect, useRef } from 'react'; // Import hooks for state and outside click handling
 
 export default function About() {
+  const [isOpen, setIsOpen] = useState(false); // State for accordion toggle
+  const accordionRef = useRef(null); // Ref to track the accordion div
+
+  // Handle click outside the accordion to close
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (accordionRef.current && !accordionRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
     <div className="min-h-screen bg-parchment text-ink p-6">
       <h1 className="text-4xl font-bold mb-6">About Me</h1>
       <div className="flex flex-col md:flex-row items-center">
         <div className="md:w-1/3 mb-6 md:mb-0">
           <img
-            src="https://media.licdn.com/dms/image/v2/D4E03AQH839lLDu-jQw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1731101331762?e=1737590400&v=beta&t=2DsI2a9EwERd1wKS29b63gsPxZqLenR1OXzrO6QleX4" // Ensure this path points to your profile image
+            src="https://media.licdn.com/dms/image/v2/D4E03AQH839lLDu-jQw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1731101331762?e=1737590400&v=beta&t=2DsI2a9EwERd1wKS29b63gsPxZqLenR1OXzrO6QleX4"
             alt="Dominique Mortoza-Cowles"
             className="rounded-full shadow-lg w-48 h-48 object-cover"
           />
@@ -34,6 +51,47 @@ export default function About() {
             <Link href="/" className="btn btn-secondary">
               Back to Home
             </Link>
+          </div>
+        </div>
+      </div>
+      {/* Accordion Section */}
+      <div className="mt-12" ref={accordionRef}>
+        <div
+          className={`collapse bg-white shadow-md transition-all duration-500 ${
+            isOpen ? 'collapse-open' : 'collapse-close'
+          }`}
+        >
+          <div
+            className="collapse-title flex justify-between items-center text-xl font-medium cursor-pointer"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            Turning Creativity Into Code: My Portfolio Adventure 🧙‍♂️
+            <span
+              className={`transform transition-transform duration-500 ${
+                isOpen ? 'rotate-180' : 'rotate-0'
+              }`}
+            >
+              ▼ {/* You can replace this with a chevron icon from a library */}
+            </span>
+          </div>
+          <div
+            className={`collapse-content overflow-hidden transition-all duration-500 ease-in-out ${
+              isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+            }`}
+          >
+            <p className="text-lg leading-relaxed mt-4">
+              Growing up, storytelling was woven into the fabric of my life. My father had a talent for spinning amusing tales (and very, very, very bad jokes), and my grandfather, a proud Glaswegian, was the epitome of a “patter merchant”—charming and quick-witted, always ready with a story to captivate his audience. (Once, between the two of them, they tried to convince my siblings and me that a haggis was a three-legged creature that lived in Scotland, its fur used to make kilts, and its body to make a bagpipe.)
+            </p>
+            <p className="text-lg leading-relaxed mt-4">
+              Those influences shaped how I view the world (and continued with my own son, much to his head-shaking at how lame a parent he has (teens, huh?)): as a series of adventures, challenges, and opportunities to tell a tale.
+            </p>
+            <h3 className="text-xl font-semibold mt-6">🧙‍♂️ Why Storytelling?</h3>
+            <p className="text-lg leading-relaxed mt-4">
+              It’s no wonder, then, that I’ve turned my portfolio into The Adventure Begins: A Portfolio Story. This isn’t just a standard list of projects or a plain resume—it’s an immersive journey into my creative and technical skills, told in a way that reflects who I am.
+            </p>
+            <p className="text-lg leading-relaxed mt-4">
+              Why did I choose this approach? Because storytelling is one of the most powerful tools we have to connect with others, and in a competitive industry, standing out matters. Turning my skills into a story not only showcases my work—it engages, inspires, and leaves a lasting impression.
+            </p>
           </div>
         </div>
       </div>
