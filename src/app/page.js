@@ -1,3 +1,4 @@
+//src/app/page.js
 "use client";
 import CharacterSheet from '../components/CharacterSheet';
 import SpellBox from '../components/SpellBox';
