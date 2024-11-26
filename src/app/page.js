@@ -43,13 +43,13 @@ export default function Home() {
       <footer className="mt-8 text-center">
         <div className="flex flex-wrap justify-center gap-4 mt-4">
           <Link href="/about" className="btn btn-accent">
-            Some of My Story So Far
+            Click Here to Know me Better
           </Link>
           <Link href="/blogs" className="btn btn-secondary">
-            Read Blogs
+            Read my Musings
           </Link>
           <Link href="/contact" className="btn btn-accent">
-            Contact Me
+            Click Here to Reach Out
           </Link>
         </div>
       </footer>
