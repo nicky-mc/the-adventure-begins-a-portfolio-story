@@ -27,8 +27,9 @@ export default function Blogs() {
     <div className="min-h-screen bg-parchment text-ink p-6">
       <h1 className="text-4xl font-bold mb-6">The Musings of an Adventurer</h1>
       <Link href="/blogs/create" className="btn btn-accent mb-4">
-        Create New Blog
-      </<Link href="/" className="btn btn-accent mb-4">
+        Create New Entry
+      </Link>
+      <Link href="/" className="btn btn-accent mb-4">
         return home
       </Link>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
