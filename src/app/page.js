@@ -15,6 +15,9 @@ export default function Home() {
       </main>
       <footer className="mt-8 text-center">
         <div className="mt-4">
+          <Llink href="/about" classNmae="btn btn-accent">
+           some of my story so far
+          </Link>
           <Link href="/blogs" className="btn btn-secondary mr-4">
             Read Blogs
           </Link>
