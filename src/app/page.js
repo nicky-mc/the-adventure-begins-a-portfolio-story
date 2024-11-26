@@ -1,5 +1,5 @@
 "use client";
-import CharacterSheet from '../components/CharacterSheet';
+iimport CharacterSheet from '../components/CharacterSheet';
 import SpellBox from '../components/SpellBox';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
@@ -40,11 +40,11 @@ export default function Home() {
         <CharacterSheet />
       </main>
       <footer className="mt-8 text-center">
-        <div className="mt-4">
-          <Link href="/about" className="btn btn-accent mr-4">
+        <div className="flex flex-wrap justify-center gap-4 mt-4">
+          <Link href="/about" className="btn btn-accent">
             Some of My Story So Far
           </Link>
-          <Link href="/blogs" className="btn btn-secondary mr-4">
+          <Link href="/blogs" className="btn btn-secondary">
             Read Blogs
           </Link>
           <Link href="/contact" className="btn btn-accent">
