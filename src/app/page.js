@@ -1,5 +1,5 @@
 "use client";
-iimport CharacterSheet from '../components/CharacterSheet';
+import CharacterSheet from '../components/CharacterSheet';
 import SpellBox from '../components/SpellBox';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
