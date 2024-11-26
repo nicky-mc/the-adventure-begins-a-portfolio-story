@@ -5,6 +5,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function SpellBox() {
   const [showSpell, setShowSpell] = useState(false);
+  const [typewriterKey, setTypewriterKey] = useState(0); // Key for resetting Typewriter
 
   const spellContent = `
 /*
@@ -31,14 +32,14 @@ const sorcererProfile = {
     "Technical Support",
     "Troubleshooting",
     "User Training",
-    "Presentation Skills"
-    "Problem Solving"
-    "Creative Thinking"
-    "Web Development"
-    "Adaptability"
+    "Presentation Skills",
+    "Problem Solving",
+    "Creative Thinking",
+    "Web Development",
+    "Adaptability",
     "Fast Study"
   ],
-  background: "Transitioning to software development with hands-on bootcamp experience and an ever growing portfolio to demonstrate my ability."
+  background: "Transitioning to software development with hands-on bootcamp experience and an ever-growing portfolio to demonstrate my ability."
 };
 
 const spellCasting = () => {
@@ -47,6 +48,14 @@ const spellCasting = () => {
 
 spellCasting();
 `;
+
+  const handleToggleScroll = () => {
+    if (showSpell) {
+      // Reset typewriter when closing
+      setTypewriterKey((prevKey) => prevKey + 1);
+    }
+    setShowSpell((prev) => !prev);
+  };
 
   return (
     <div className="p-6 rounded-lg shadow-lg bg-gray-900 text-green-400 mt-8 font-mono">
@@ -71,12 +80,12 @@ spellCasting();
             }}
           >
             <Typewriter
+              key={typewriterKey} // Force re-render when toggling
               words={[spellContent]}
-              loop={false}
+              loop={false} // No looping
               cursor
               cursorStyle="|"
               typeSpeed={30}
-              deleteSpeed={20}
             />
           </pre>
         ) : (
@@ -90,7 +99,7 @@ spellCasting();
               ? "btn-error bg-gradient-to-r from-red-600 to-orange-400 hover:from-red-700 hover:to-orange-500"
               : "btn-primary bg-gradient-to-r from-purple-600 to-blue-400 hover:from-purple-700 hover:to-blue-500"
           } text-white shadow-md`}
-          onClick={() => setShowSpell((prev) => !prev)}
+          onClick={handleToggleScroll}
         >
           {showSpell ? "Seal the Scroll" : "Cast 'Unleash Web Dev Magic'"}
         </button>
