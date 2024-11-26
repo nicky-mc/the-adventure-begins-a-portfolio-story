@@ -2,7 +2,7 @@ import './globals.css';
 import Header from '@/components/Header'; 
 export const metadata = {
   title: "Nicky Mortoza-Cowles Portfolio",
-  description: "High-fantasy themed portfolio showcasing Dominique's web development skills.",
+  description: "High-fantasy themed portfolio showcasing the web development skills and innate creativity of Nicky Mortoza-Cowles.",
 };
 
 export default function RootLayout({ children }) {
