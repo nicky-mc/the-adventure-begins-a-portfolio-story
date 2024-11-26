@@ -4,13 +4,16 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
 export default function About() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isMainAccordionOpen, setIsMainAccordionOpen] = useState(false);
+  const [isNestedAccordionOpen, setIsNestedAccordionOpen] = useState(false);
   const accordionRef = useRef(null);
 
+  // Close accordion when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (accordionRef.current && !accordionRef.current.contains(event.target)) {
-        setIsOpen(false);
+        setIsMainAccordionOpen(false);
+        setIsNestedAccordionOpen(false);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -53,21 +56,21 @@ export default function About() {
         </div>
       </div>
 
-      {/* Accordion Section */}
+      {/* Main Accordion */}
       <div className="mt-12" ref={accordionRef}>
         <div
           className={`collapse bg-white shadow-md transition-all duration-500 ${
-            isOpen ? "collapse-open" : "collapse-close"
+            isMainAccordionOpen ? "collapse-open" : "collapse-close"
           }`}
         >
           <div
             className="collapse-title flex justify-between items-center text-xl font-medium cursor-pointer"
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => setIsMainAccordionOpen(!isMainAccordionOpen)}
           >
             Turning Creativity Into Code: My Portfolio Adventure 🧙‍♂️
             <span
               className={`transform transition-transform duration-500 ${
-                isOpen ? "rotate-180" : "rotate-0"
+                isMainAccordionOpen ? "rotate-180" : "rotate-0"
               }`}
             >
               ▼
@@ -75,22 +78,47 @@ export default function About() {
           </div>
           <div
             className={`collapse-content overflow-hidden transition-all duration-500 ease-in-out ${
-              isOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+              isMainAccordionOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
             }`}
           >
-            <p className="text-lg leading-relaxed mt-4">
-              Growing up, storytelling was woven into the fabric of my life. My father had a talent for spinning amusing tales (and very, very, very bad jokes), and my grandfather, a proud Glaswegian, was the epitome of a “patter merchant”—charming and quick-witted, always ready with a story to captivate his audience. (Once, between the two of them, they tried to convince my siblings and me that a haggis was a three-legged creature that lived in Scotland, its fur used to make kilts, and its body to make a bagpipe.)
-            </p>
-            <p className="text-lg leading-relaxed mt-4">
-              Those influences shaped how I view the world (and continued with my own son, much to his head-shaking at how lame a parent he has (teens, huh?)): as a series of adventures, challenges, and opportunities to tell a tale.
-            </p>
-            <h3 className="text-xl font-semibold mt-6">🧙‍♂️ Why Storytelling?</h3>
-            <p className="text-lg leading-relaxed mt-4">
-              It’s no wonder, then, that I’ve turned my portfolio into The Adventure Begins: A Portfolio Story. This isn’t just a standard list of projects or a plain resume—it’s an immersive journey into my creative and technical skills, told in a way that reflects who I am.
-            </p>
-            <p className="text-lg leading-relaxed mt-4 text-black">
-              Why did I choose this approach? Because storytelling is one of the most powerful tools we have to connect with others, and in a competitive industry, standing out matters. Turning my skills into a story not only showcases my work—it engages, inspires, and leaves a lasting impression.
-            </p>
+            {/* Nested Accordion */}
+            <div
+              className={`collapse bg-gray-50 shadow-md transition-all duration-500 mt-4 ${
+                isNestedAccordionOpen ? "collapse-open" : "collapse-close"
+              }`}
+            >
+              <div
+                className="collapse-title flex justify-between items-center text-lg font-medium cursor-pointer"
+                onClick={() => setIsNestedAccordionOpen(!isNestedAccordionOpen)}
+              >
+                Why Storytelling?
+                <span
+                  className={`transform transition-transform duration-500 ${
+                    isNestedAccordionOpen ? "rotate-180" : "rotate-0"
+                  }`}
+                >
+                  ▼
+                </span>
+              </div>
+              <div
+                className={`collapse-content overflow-hidden transition-all duration-500 ease-in-out ${
+                  isNestedAccordionOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
+                }`}
+              >
+                <p className="text-lg leading-relaxed mt-4">
+                  Growing up, storytelling was woven into the fabric of my life. My father had a talent for spinning amusing tales (and very, very, very bad jokes), and my grandfather, a proud Glaswegian, was the epitome of a “patter merchant”—charming and quick-witted, always ready with a story to captivate his audience.
+                </p>
+                <p className="text-lg leading-relaxed mt-4">
+                  Those influences shaped how I view the world (and continued with my own son, much to his head-shaking at how lame a parent he has (teens, huh?)): as a series of adventures, challenges, and opportunities to tell a tale.
+                </p>
+                <p className="text-lg leading-relaxed mt-4">
+                  It’s no wonder, then, that I’ve turned my portfolio into <strong>The Adventure Begins: A Portfolio Story</strong>. This isn’t just a standard list of projects or a plain resume—it’s an immersive journey into my creative and technical skills, told in a way that reflects who I am.
+                </p>
+                <p className="text-lg leading-relaxed mt-4">
+                  Why did I choose this approach? Because storytelling is one of the most powerful tools we have to connect with others, and in a competitive industry, standing out matters. Turning my skills into a story not only showcases my work—it engages, inspires, and leaves a lasting impression.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
