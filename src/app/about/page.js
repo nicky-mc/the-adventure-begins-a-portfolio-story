@@ -1,14 +1,12 @@
-//about/page.js
 "use client";
 
-import Link from 'next/link';
-import { useState, useEffect, useRef } from 'react'; // Import hooks for state and outside click handling
+import Link from "next/link";
+import { useState, useEffect, useRef } from "react";
 
 export default function About() {
-  const [isOpen, setIsOpen] = useState(false); // State for accordion toggle
-  const accordionRef = useRef(null); // Ref to track the accordion div
+  const [isOpen, setIsOpen] = useState(false);
+  const accordionRef = useRef(null);
 
-  // Handle click outside the accordion to close
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (accordionRef.current && !accordionRef.current.contains(event.target)) {
@@ -54,11 +52,12 @@ export default function About() {
           </div>
         </div>
       </div>
+
       {/* Accordion Section */}
       <div className="mt-12" ref={accordionRef}>
         <div
           className={`collapse bg-white shadow-md transition-all duration-500 ${
-            isOpen ? 'collapse-open' : 'collapse-close'
+            isOpen ? "collapse-open" : "collapse-close"
           }`}
         >
           <div
@@ -68,15 +67,15 @@ export default function About() {
             Turning Creativity Into Code: My Portfolio Adventure 🧙‍♂️
             <span
               className={`transform transition-transform duration-500 ${
-                isOpen ? 'rotate-180' : 'rotate-0'
+                isOpen ? "rotate-180" : "rotate-0"
               }`}
             >
-              ▼ {/* You can replace this with a chevron icon from a library */}
+              ▼
             </span>
           </div>
           <div
             className={`collapse-content overflow-hidden transition-all duration-500 ease-in-out ${
-              isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+              isOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
             }`}
           >
             <p className="text-lg leading-relaxed mt-4">
@@ -89,7 +88,7 @@ export default function About() {
             <p className="text-lg leading-relaxed mt-4">
               It’s no wonder, then, that I’ve turned my portfolio into The Adventure Begins: A Portfolio Story. This isn’t just a standard list of projects or a plain resume—it’s an immersive journey into my creative and technical skills, told in a way that reflects who I am.
             </p>
-            <p className="text-lg leading-relaxed mt-4">
+            <p className="text-lg leading-relaxed mt-4 text-black">
               Why did I choose this approach? Because storytelling is one of the most powerful tools we have to connect with others, and in a competitive industry, standing out matters. Turning my skills into a story not only showcases my work—it engages, inspires, and leaves a lasting impression.
             </p>
           </div>
