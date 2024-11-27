@@ -8,6 +8,12 @@ const projects = [
     link: 'https://nicky-mortoza-cowles-portfolio.vercel.app/',
   },
   {
+    title: 'Quizotica',
+    description: 'a Quiz app that allows users to take quizzes and see their scores. Built with nextjs utilising the open trivia database and saving user scores to an updating json file using fs.',
+    imageUrl: '/images/project7.png',
+    link: 'https://quizotica.vercel.app/',
+  },
+  {
     title: 'The Nexus',
     description: 'A Nextjs full stack site that serves as a companion for d&d players and dungeon masters a like this one will be ever expanding so watch out for these changes.',
     imageUrl: '/images/project2.png',
