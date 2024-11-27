@@ -9,7 +9,7 @@ const projects = [
   },
   {
     title: 'Quizotica',
-    description: 'a Quiz app that allows users to take quizzes and see their scores. Built with nextjs utilising the open trivia database and saving user scores to an updating json file using fs.',
+    description: 'a Quiz app that allows users to take quizzes and see their scores. Built with nextjs utilising the open trivia database.',
     imageUrl: '/images/project7.png',
     link: 'https://quizotica.vercel.app/',
   },
