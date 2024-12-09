@@ -26,7 +26,7 @@ export default function About() {
       <div className="flex flex-col md:flex-row items-center">
         <div className="md:w-1/3 mb-6 md:mb-0">
           <img
-            src="https://media.licdn.com/dms/image/v2/D4E03AQH839lLDu-jQw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1731101331762?e=1737590400&v=beta&t=2DsI2a9EwERd1wKS29b63gsPxZqLenR1OXzrO6QleX4"
+            src="https://media.licdn.com/dms/image/v2/D4E03AQGHPF3CANh07Q/profile-displayphoto-shrink_400_400/B4EZOSVsYqGYAg-/0/1733326988028?e=2147483647&v=beta&t=L1wK8XlO-BMjs8t5YCvPkx3j5rEcQWeoUervyRD-NbMdisplayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1731101331762?e=1737590400&v=beta&t=2DsI2a9EwERd1wKS29b63gsPxZqLenR1OXzrO6QleX4"
             alt="Dominique Mortoza-Cowles"
             className="rounded-full shadow-lg w-48 h-48 object-cover"
           />
