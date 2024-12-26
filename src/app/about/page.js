@@ -26,8 +26,7 @@ export default function About() {
       <div className="flex flex-col md:flex-row items-center">
         <div className="md:w-1/3 mb-6 md:mb-0">
           <img
-            src="/images
-/155E2806-D377-48C8-9281-D0A4870CAA30.jpeg"
+            src="/public/images/155E2806-D377-48C8-9281-D0A4870CAA30.jpeg"
             alt="Dominique Mortoza-Cowles"
             className="rounded-full shadow-lg w-48 h-48 object-cover"
           />
