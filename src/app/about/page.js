@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
@@ -26,7 +25,7 @@ export default function About() {
       <div className="flex flex-col md:flex-row items-center">
         <div className="md:w-1/3 mb-6 md:mb-0">
           <img
-            src="/public/images/155E2806-D377-48C8-9281-D0A4870CAA30.jpeg"
+            src="https://media.licdn.com/dms/image/v2/D4E03AQGHPF3CANh07Q/profile-displayphoto-shrink_400_400/B4EZOSVsYqGYAg-/0/1733326988028?e=2147483647&v=beta&t=L1wK8XlO-BMjs8t5YCvPkx3j5rEcQWeoUervyRD-NbM"
             alt="Dominique Mortoza-Cowles"
             className="rounded-full shadow-lg w-48 h-48 object-cover"
           />
